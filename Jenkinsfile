@@ -14,7 +14,9 @@ pipeline{
         }
         stage("maven build"){
             steps{
+                dir('helloworld'){
                     sh 'mvn clean package'
+                } 
             }
         }
     }
