@@ -7,14 +7,12 @@ pipeline{
     stages{
         stage('Git checkout'){
             steps{
-               git 'https://github.com/thangSu/demo-asible-docker.git'
+               git 'https://github.com/thangSu/helloworld.git'
             }
         }
         stage("maven build"){
             steps{
-                dir("helloworld"){
                     sh 'mvn clean package'
-                }
             }
         }
     }
