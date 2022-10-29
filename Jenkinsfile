@@ -9,7 +9,7 @@ pipeline{
     stages{
         stage('Git checkout'){
             steps{
-               git 'https://github.com/thangSu/helloworld.git'
+               git 'https://github.com/thangSu/demo-asible-docker.git'
             }
         }
         stage("maven build"){
