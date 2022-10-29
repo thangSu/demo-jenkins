@@ -1,4 +1,6 @@
+currentBuild.displayname = "thang-code-khong-co-sai#"+currentBuild.number
 pipeline{
+
     agent any 
     tools{
         maven 'maven3'
