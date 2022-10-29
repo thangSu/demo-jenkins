@@ -23,8 +23,8 @@ pipeline{
                 sh """
                     scp -o StrictHostKeyChecking=no helloworld/webapp/target/myweb.war ec2-user@10.0.1.174:/opt/tomcat8/webapps/
 
-                    ssh ec2-user@10.0.1.174 /opt/tomcat8/bin/shutdown.sh
-                    ssh ec2-user@10.0.1.174 /opt/tomcat8/bin/start.sh
+                    ssh ec2-user@10.0.1.174 ./opt/tomcat8/bin/shutdown.sh
+                    ssh ec2-user@10.0.1.174 ./opt/tomcat8/bin/start.sh
                 """
             }
            
