@@ -13,7 +13,7 @@ pipeline{
         stage("maven build"){
             steps{
                 dir("helloworld"){
-                    sh 'mvn clean package'
+                    sh 'mvn clean package -tf :webapp'
                 }
             }
         }
